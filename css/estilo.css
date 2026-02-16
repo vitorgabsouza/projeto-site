@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: #acacff;
+}
+
+.conteudo-principal {
+    background-color: #fff;
+    width: 56rem;
+    max-width: 90%;
+    padding: 1.6rem;
+    margin: 1.6rem auto;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.cabecalho {
+    margin-bottom: 1.6rem;
+}
+
+.cabecalho h1 {
+    font-size: 3.2rem;
+    color: #3a0070;
+    margin-bottom: 1.6rem;
+}
+
+.imagem {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+.secao {
+    margin-bottom: 1.6rem;
+}
+
+.secao::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.secao h2 {
+    font-size: 2.4rem;
+    color: #3a0070;
+    margin-bottom: 1.6rem;
+}
+
+.secao p {
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+
+.secao iframe {
+    max-width: 100%;
+    margin-bottom: 1.6rem;
+}
+
+.lado {
+    float: none;
+    margin-bottom: 1.6rem;
+}
+
+.lado img {
+    width: 80px;
+    margin-right: 1.6rem;
+}
+
+.lado img:last-child,
+.secao p:last-child {
+    margin: 0;
+}
+
+.link {
+    font-weight: bold;
+    text-decoration: none;
+    color: #3a0070;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #1a1aff;
+}
+
+.rodape p {
+    font-size: 1.6rem;
+}
+
+@media (min-width: 768px) {
+    .lado {
+        float: right;
+        margin: 0 0 0 1.6rem;
+    }
+}
